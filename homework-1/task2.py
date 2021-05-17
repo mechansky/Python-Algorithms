@@ -14,12 +14,12 @@
 
 
 ## первый алгоритм
-## O(1) + O(N) x O(N) x O(1) = O(N2)
+## O(1) + O(N) x O(1) x O(1) = O(N)
 
 def get_min_from_list(lst):
     min_number = lst[0]  # O(1)
     for element in lst:  # O(N)
-        if element < min_number:  # O(N)
+        if element < min_number:  # O(1)
             min_number = element  # O(1)
     print(min_number)
 
