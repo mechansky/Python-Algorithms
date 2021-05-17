@@ -24,9 +24,16 @@ def get_min_from_list(lst):
     print(min_number)
 
 
-## второй алгоритм
-## O(N)
+# ## второй алгоритм
+# ## O(N)
 
-def get_min_from_list_2(lst):
-    min_number = min(lst)  # O(N)
-    print(min_number)
+# def get_min_from_list_2(lst):
+#     min_number = min(lst)  # O(N)
+#     print(min_number)
+
+    
+# сложность - O(1)
+
+def get_min_from_list_3(lst):
+    lst.sort()  # O(1)
+    print(lst[0])
