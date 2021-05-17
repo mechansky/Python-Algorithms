@@ -25,10 +25,10 @@ companies = {
 }
 
 
-def get_max_profit(dict):  # O(N2)
+def get_max_profit(dict):  # сложность: O(N)
     max_profit = 0  # O(1)
     for k, v in dict.items():  # O(N)
-        if dict[k] > max_profit:  # O(N)
+        if dict[k] > max_profit:  # O(1)
             max_profit = dict[k]  # O(1)
     print(max_profit)
 
@@ -60,7 +60,7 @@ get_max_profit_3(companies)
 
 def get_max_profit_4(dict):  # O(N)
     lst = list(dict.values())  # O(N)
-    max_profit = max(lst)  # O(N)
+    max_profit = max(lst)  # O(1)
     print(max_profit) # O(1)
 
 get_max_profit_4(companies)
