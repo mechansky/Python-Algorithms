@@ -32,8 +32,8 @@ def get_min_from_list(lst):
 #     print(min_number)
 
     
-# сложность - O(1)
+# сложность - O(NlogN)
 
 def get_min_from_list_3(lst):
-    lst.sort()  # O(1)
+    lst.sort()  # O(NlogN)
     print(lst[0])
