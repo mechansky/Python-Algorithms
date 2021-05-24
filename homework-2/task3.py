@@ -13,3 +13,8 @@ def reverse_number(number, rev_number=0):
 
 
 reverse_number(34860)
+
+a = 'asd'
+
+b = a + 'asd'
+print(a)
